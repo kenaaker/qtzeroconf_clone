@@ -115,7 +115,8 @@ void mainWindow::appStateChanged(Qt::ApplicationState state)
 		if (publishEnabled && !zeroConf.publishExists())
 			startPublish();
 		if (!zeroConf.browserExists())
-			zeroConf.startBrowser("_qtzeroconf_test._tcp");
+			zeroConf.startBrowser("_light_controllerui._tcp");
+//   		zeroConf.startBrowser("_qtzeroconf_test._tcp");
 	}
 }
 

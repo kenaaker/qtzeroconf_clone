@@ -53,8 +53,7 @@ public:
 	void startServicePublish(const char *name, const char *type, const char *domain, quint16 port);
 	void stopServicePublish(void);
 	bool publishExists(void);
-	inline void startBrowser(QString type)
-	{
+	inline void startBrowser(QString type) {
 		startBrowser(type, QAbstractSocket::IPv4Protocol);
 	}
 	void startBrowser(QString type, QAbstractSocket::NetworkLayerProtocol protocol);
